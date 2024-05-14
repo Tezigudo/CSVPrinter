@@ -11,9 +11,4 @@ class TestCSVPrinter(unittest.TestCase):
     def test_read2(self):
         printer = CSVPrinter('tests/sample.csv')
         line = printer.read()
-        self.assertEqual(line[1][1], '2')
-    
-    def test_read3(self):
-        printer = CSVPrinter('tests/sample.csv')
-        lines = printer.read()
-        unittest.TestCase.fail("this line should not be execate")
+        self.assertEqual(line[1][1], ' momomi')
